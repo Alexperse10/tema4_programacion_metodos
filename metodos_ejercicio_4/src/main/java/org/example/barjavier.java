@@ -1,0 +1,13 @@
+package org.example;
+
+import java.util.Scanner;
+
+public class barjavier {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        while (true){
+
+        }
+    }
+}
