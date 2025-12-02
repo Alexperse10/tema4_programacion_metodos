@@ -10,5 +10,5 @@ public class operaciones {
     public static int doble (int n){
         return n*2;
     }
-    // todo los metodos son static para poder llamarlos desde main sin objetos 
+    // todo los metodos son static para poder llamarlos desde main sin objetos
 }
