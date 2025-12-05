@@ -53,4 +53,24 @@ public class ventas_javier {
         return semana[5];
     }
 
+    public static String nombredia (int dia){
+        switch (dia){
+            case 0:
+                return "martes";
+            case 1:
+                return "miercoles";
+            case 2:
+                return "jueves";
+            case 3:
+                return "viernes";
+            case 4:
+                return "sabado";
+            case 5:
+                return "domingo";
+            default:
+                return "dia invalido";
+        }
+    }
+
 }
+

@@ -19,8 +19,8 @@ public class Main {
 
         //mostrar resultados
 
-        System.out.println("dia con mas ventas "+diamax);
-        System.out.println("dia con menos ventas " +diamin);
+        System.out.println("dia con mas ventas "+nombredia(diamax));
+        System.out.println("dia con menos ventas " +nombredia(diamin));
         System.out.println("la media semanal es" +media);
         System.out.println("la recaudacion del domingo es" +recaudacion_domingo);
 
