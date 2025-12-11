@@ -44,10 +44,21 @@ public class CampoMinas {
             System.out.println();
         }
         int contadorceldas =0;
-        for (int fila = 0;fila<altura; fila++){
+        for (int fila = 0;fila<altura; fila++){  // aqui recorro toda la matriz
             for (int columna = 0; columna<ancho; columna++){
-                if (tablero [fila][columna] == '-'){
-                    int minasalrededor=0; 
+                if (tablero [fila][columna] == '-'){  // busco el guion que es espacio libre
+                    int minasalrededor=0;
+
+                    for (int movifilas = -1; movifilas<=1; movifilas++){
+                        for (int movicolumns = -1; movicolumns<=1; movicolumns++){
+                            if (movifilas == 0 && movicolumns == 0) {
+                                continue;
+                            }
+                            int movimientofila = fila +movifilas;
+                            int movimientocolumna = columna +movicolumns;
+                            }
+                        }
+                    }
 
                 }
             }
