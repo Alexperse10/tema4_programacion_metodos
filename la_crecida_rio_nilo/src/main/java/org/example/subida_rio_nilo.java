@@ -39,7 +39,7 @@ public class subida_rio_nilo {
             }
         int altura_minima=0;
         int total_celdas = alto * ancho;
-        int mitad_celdas = total_celdas/2; 
+        int mitad_celdas = total_celdas/2;
         for (int i =0; i<alto; i++){
             for (int j =1; j<(ancho/2)+1; j++){
                 if (numero_aleatorio[i][j]>altura_minima){
