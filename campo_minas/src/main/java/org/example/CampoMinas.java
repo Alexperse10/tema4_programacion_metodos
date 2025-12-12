@@ -56,13 +56,22 @@ public class CampoMinas {
                             }
                             int movimientofila = fila +movifilas;
                             int movimientocolumna = columna +movicolumns;
+
+                            if (movimientofila >= 0 && movimientofila<altura && movimientocolumna>=0 && movimientocolumna<ancho){
+                                if (tablero[movimientofila][movimientocolumna] == '*'){
+                                    minasalrededor++;
+                                }
                             }
                         }
                     }
 
+                    if (minasalrededor>=6){
+                        contadorceldas++;
+                    }
                 }
             }
 
         }
+        System.out.println("celdas vacias con al menos 6 minas alrededor " +contadorceldas );
     }
 }
