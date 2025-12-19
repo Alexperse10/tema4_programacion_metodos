@@ -25,12 +25,16 @@ public class CampoMinasModularTest {
                 {'*','*','*'},
                 {'*','*','*'},
                 {'*','*','*'}
+
+
         };
 
         int resultado = CampoMinasModular.contarCeldas(tablero, 3, 3);
 
         assertEquals(0, resultado);
     }
+
+
 
     @Test
     void casoEjemploEnunciado() {
@@ -45,7 +49,6 @@ public class CampoMinasModularTest {
 
         assertEquals(0, resultado);
     }
-
     @Test
     void celdasRodeadasDeMinas() {
         char[][] tablero = {
@@ -54,6 +57,9 @@ public class CampoMinasModularTest {
                 {'*','*','*','*'},
                 {'*','*','*','*'}
         };
+
+
+
 
         int resultado = CampoMinasModular.contarCeldas(tablero, 4, 4);
 

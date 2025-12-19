@@ -33,6 +33,7 @@ public class CampoMinasModular {
 
             } while (linea.length() != ancho);
 
+
             tablero[i] = linea.toCharArray();
         }
 
@@ -55,34 +56,42 @@ public class CampoMinasModular {
 
                 if (tablero[fila][columna] == '-') {
                     int minasalrededor = 0;
+
+
+
                     for (int movifilas = -1; movifilas <= 1; movifilas++) {
                         for (int movicolumns = -1; movicolumns <= 1; movicolumns++) {
 
                             if (movifilas == 0 && movicolumns == 0) {
                                 continue;
-                            }
+                             }
 
                             int movimientofila = fila + movifilas;
 
-                            int movimientocolumna = columna + movicolumns;
+                                int movimientocolumna = columna + movicolumns;
 
 
                             if (movimientofila >= 0 && movimientofila < altura
                                     && movimientocolumna >= 0 && movimientocolumna < ancho) {
 
                                 if (tablero[movimientofila][movimientocolumna] == '*') {
+
+
+                                    
                                     minasalrededor++;
                                 }
-                            }
-                        }
-                    }
+                             }
+                          }
+                          }
 
                     if (minasalrededor >= 6) {
+
+
                         contadorceldas++;
                     }
-                }
-            }
-        }
+                 }
+               }
+              }
 
         return contadorceldas;
     }
@@ -102,8 +111,8 @@ public class CampoMinasModular {
                 System.out.print(tablero[i][j]);
             }
             System.out.println();
-        }
-    }
+         }
+      }
 
     /**
      * Metodo main donde muestro los mensajes del programa
@@ -118,15 +127,15 @@ public class CampoMinasModular {
 
         System.out.println("------------------------");
 
+
+
         System.out.println("introduce el ancho del tablero");
         int ancho = sc.nextInt();
 
         System.out.println("introduce el alto del tablero");
         int altura = sc.nextInt();
         sc.nextLine();
-
         char[][] tablero = leerTablero(sc, altura, ancho);
-
         System.out.println("el tablero se ha cargado correctamente");
         mostrarTablero(tablero, altura, ancho);
 

@@ -58,7 +58,7 @@ public class CampoMinas_reto {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
-            int ancho = sc.nextInt();   
+            int ancho = sc.nextInt();
             int altura = sc.nextInt();
             sc.nextLine();
 
