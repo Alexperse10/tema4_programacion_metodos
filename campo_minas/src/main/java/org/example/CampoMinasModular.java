@@ -77,7 +77,7 @@ public class CampoMinasModular {
                                 if (tablero[movimientofila][movimientocolumna] == '*') {
 
 
-                                    
+
                                     minasalrededor++;
                                 }
                              }
