@@ -6,7 +6,7 @@ public class ejercicio_2_recursividad_clase {
     public static int exponente (int base_, int exponente_){
         if (base_ < 0 || exponente_< 0){
             System.out.println("Error las variables deben ser positivas ");
-            return -1; 
+            return -1;
         } else if (exponente_ == 0) {
             return 1;
 
